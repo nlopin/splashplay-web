@@ -2,59 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Check user's preferred language and show banner if needed
   checkPreferredLanguage();
 
-  // Helper function to handle videos
-  const handleVideo = (videoElement, containerElement) => {
-    if (!videoElement) return;
-
-    // Check if the browser supports video playback
-    const isVideoSupported = !!document.createElement('video').canPlayType;
-
-    if (isVideoSupported) {
-      // Ensure video plays even if autoplay fails on some mobile devices
-      videoElement.play().catch(() => {
-        console.log('Autoplay prevented. User interaction required to play video.');
-
-        // Add a play button overlay if autoplay is blocked
-        if (containerElement) {
-          const playButton = document.createElement('button');
-          playButton.classList.add('video-play-button');
-          playButton.innerHTML = '<span>▶</span>';
-          playButton.setAttribute('aria-label', 'Play video');
-
-          containerElement.appendChild(playButton);
-
-          playButton.addEventListener('click', () => {
-            videoElement.play();
-            playButton.style.display = 'none';
-          });
-        }
-      });
-
-      // Optimize video loading on mobile
-      if (window.matchMedia('(max-width: 768px)').matches) {
-        videoElement.setAttribute('preload', 'metadata');
-      }
-    } else {
-      // Add a fallback background image if video isn't supported
-      if (containerElement) {
-        containerElement.classList.add('video-fallback');
-      }
-    }
-  };
-
-  // Handle hero video
-  const heroVideo = document.querySelector('.hero__video');
-  const heroVideoContainer = document.querySelector('.hero__video-container');
-  handleVideo(heroVideo, heroVideoContainer);
-
-  // Handle technique videos
   const techniqueVideos = document.querySelectorAll('.technique-video');
   techniqueVideos.forEach(video => {
-    const container = video.closest('.technique-video-container');
-    handleVideo(video, container);
-
-    // Add lazy loading for technique videos
-    // Videos will only start loading when they're close to being in viewport
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

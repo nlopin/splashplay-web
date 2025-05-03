@@ -1248,6 +1248,15 @@ footer {
         max-width: 1140px;
     }
 
+     /* Fixed language banner for desktop only */
+    .language-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 11;
+    }
+
     /* Desktop Contacts Layout */
     .contacts {
         padding: 5rem 0;
@@ -1326,6 +1335,12 @@ footer {
         z-index: 10;
         background-color: rgba(249, 249, 249, 0.9);
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        top: 36px; /* Height of the banner */
+    }
+
+    /* Add padding to the body to account for the fixed banner */
+    body {
+        padding-top: 36px; /* Same as the banner height */
     }
 
     .header__inner {
@@ -1353,9 +1368,9 @@ footer {
         height: 60px;
     }
 
-    /* Adjust content to account for fixed header */
+    /* Adjust content to account for fixed header and banner */
     .hero {
-        padding-top: 80px;
+        padding-top: 116px; /* 80px (original padding) + 36px (banner height) */
     }
 
     /* Increase button size on desktop and add spacing */
