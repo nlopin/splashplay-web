@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups." >
+    <meta name="description"
+            content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://splashplay.es/">
     <meta property="og:title" content="SplashPlay - playful art sessions in Barcelona">
-    <meta property="og:description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
+    <meta property="og:description"
+            content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
     <meta property="og:image" content="https://splashplay.es/assets/photo/gallery/gallery1.jpg">
     <meta property="og:site_name" content="SplashPlay Studio">
+
+    <!-- Language Alternatives -->
+    <link rel="alternate" hreflang="en" href="https://splashplay.es/en.html"/>
+    <link rel="alternate" hreflang="x-default" href="https://splashplay.es/index.html"/>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://splashplay.es/">
     <meta name="twitter:title" content="SplashPlay - playful art sessions in Barcelona">
-    <meta name="twitter:description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
+    <meta name="twitter:description"
+            content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
     <meta name="twitter:image" content="https://splashplay.es/assets/photo/gallery/gallery1.jpg">
     <title>SplashPlay - playful art sessions in Barcelona.</title>
     <link rel="icon" href="assets/favicon.ico" sizes="32x32">
@@ -50,6 +57,11 @@
                         </svg>
                     </a>
                 </div>
+                <div class="header__lang-switcher header__lang-switcher--desktop">
+                    <a href="index.html" class="lang-btn" aria-label="Cambiar a Español">ES</a>
+                    <span class="lang-separator">|</span>
+                    <a href="en.html" class="lang-btn active" aria-label="Switch to English">EN</a>
+                </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <span class="mobile-menu-line"></span>
                     <span class="mobile-menu-line"></span>
@@ -67,6 +79,11 @@
                         <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
+                <div class="header__lang-switcher header__lang-switcher--mobile">
+                    <a href="index.html" class="lang-btn" aria-label="Cambiar a Español">ES</a>
+                    <span class="lang-separator">|</span>
+                    <a href="en.html" class="lang-btn active" aria-label="Switch to English">EN</a>
+                </div>
             </div>
         </div>
     </div>
@@ -85,7 +102,7 @@
                 </div>
             </div>
             <div class="hero__video-container">
-                <video class="hero__video" autoplay muted loop playsinline>
+                <video class="hero__video" autoplay muted loop controls>
                     <source src="assets/video/sp_katya_alina.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -324,9 +341,6 @@
                         </div>
                     </div>
 
-                    <!-- Open Sessions tab content moved to main Sessions section -->
-
-                    <!-- Gift Certificates moved to separate section -->
 
                     <div class="pricing-tab" id="packages-tab">
                         <div class="price-header">
@@ -348,7 +362,6 @@
                                         <li>🤑 Base price</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
@@ -364,7 +377,6 @@
                                         <li>🤑 €20 off</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card popular">
@@ -381,7 +393,6 @@
                                         <li>🤑 €45 off</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
@@ -397,7 +408,6 @@
                                         <li>🤑 €80 off</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
@@ -413,14 +423,12 @@
                                         <li>🤑 €120 off</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- "Book Your Session" button moved to Sessions section -->
         </div>
     </section>
 
@@ -573,7 +581,7 @@
                             Message</a>
                     </div>
 
-                       <div class="contacts-item">
+                    <div class="contacts-item">
                         <h3 class="contacts-item-title">Email</h3>
                         <p class="contacts-item-text">info@splashplay.es</p>
                         <a href="mailto:info@splashplay.es" target="_blank" rel="noopener" class="btn btn-small">Send

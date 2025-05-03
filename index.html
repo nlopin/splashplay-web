@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups." >
+    <meta name="description"
+            content="Crea obras maestras abstractas con técnicas divertidas como vertido, giro y boxeo. ¡Cero experiencia artística necesaria! Perfecto para individuos, parejas y grupos.">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://splashplay.es/">
-    <meta property="og:title" content="SplashPlay - playful art sessions in Barcelona">
-    <meta property="og:description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
+    <meta property="og:title" content="SplashPlay - sesiones de arte lúdicas en Barcelona">
+    <meta property="og:description"
+            content="Crea obras maestras abstractas con técnicas divertidas como vertido, giro y boxeo. ¡Cero experiencia artística necesaria! Perfecto para individuos, parejas y grupos.">
     <meta property="og:image" content="https://splashplay.es/assets/photo/gallery/gallery1.jpg">
     <meta property="og:site_name" content="SplashPlay Studio">
+
+    <!-- Language Alternatives -->
+    <link rel="alternate" hreflang="en" href="https://splashplay.es/en.html"/>
+    <link rel="alternate" hreflang="x-default" href="https://splashplay.es/index.html"/>
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://splashplay.es/">
-    <meta name="twitter:title" content="SplashPlay - playful art sessions in Barcelona">
-    <meta name="twitter:description" content="Create abstract masterpieces with fun techniques like pouring, spinning, and boxing. No artistic skills needed! Perfect for individuals, couples, and groups.">
+    <meta name="twitter:title" content="SplashPlay - sesiones de arte lúdicas en Barcelona">
+    <meta name="twitter:description"
+            content="Crea obras maestras abstractas con técnicas divertidas como vertido, giro y boxeo. ¡Cero experiencia artística necesaria! Perfecto para individuos, parejas y grupos.">
     <meta name="twitter:image" content="https://splashplay.es/assets/photo/gallery/gallery1.jpg">
-    <title>SplashPlay - playful art sessions in Barcelona.</title>
+    <title>SplashPlay - sesiones de arte lúdicas en Barcelona.</title>
     <link rel="icon" href="assets/favicon.ico" sizes="32x32">
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,13 +43,13 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <a href="#home" id="logo-link"><img src="assets/splash-play-logo.svg" alt="SplashPlay Studio Logo"
+                <a href="#home" id="logo-link"><img src="assets/splash-play-logo.svg" alt="Logo de SplashPlay Studio"
                         class="header__logo-img"></a>
             </div>
             <div class="header__right">
                 <div class="header__social">
                     <a href="https://www.instagram.com/splashplaystudio" target="_blank" rel="noopener"
-                            class="social-link" aria-label="Visit our Instagram">
+                            class="social-link" aria-label="Visita nuestro Instagram">
                         <svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
@@ -50,7 +57,12 @@
                         </svg>
                     </a>
                 </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <div class="header__lang-switcher header__lang-switcher--desktop">
+                    <a href="index.html" class="lang-btn active" aria-label="Cambiar a Español">ES</a>
+                    <span class="lang-separator">|</span>
+                    <a href="en.html" class="lang-btn" aria-label="Switch to English">EN</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Alternar menú">
                     <span class="mobile-menu-line"></span>
                     <span class="mobile-menu-line"></span>
                     <span class="mobile-menu-line"></span>
@@ -59,14 +71,19 @@
             <div class="header__nav-container">
                 <nav>
                     <ul>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#techniques">Techniques</a></li>
-                        <li><a href="#prices">Prices</a></li>
-                        <li><a href="#gift-certificates">Gift Certificates</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#experience">Experiencia</a></li>
+                        <li><a href="#techniques">Técnicas</a></li>
+                        <li><a href="#prices">Precios</a></li>
+                        <li><a href="#gift-certificates">Tarjetas Regalo</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#contacts">Contacto</a></li>
                     </ul>
                 </nav>
+                <div class="header__lang-switcher header__lang-switcher--mobile">
+                    <a href="index.html" class="lang-btn active" aria-label="Cambiar a Español">ES</a>
+                    <span class="lang-separator">|</span>
+                    <a href="en.html" class="lang-btn" aria-label="Switch to English">EN</a>
+                </div>
             </div>
         </div>
     </div>
@@ -76,18 +93,18 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero__content">
-                <h1 class="hero__title visually-hidden">Creative Art Studio</h1>
-                <p class="hero__subtitle">Art studio in Barcelona where creativity flows freely.
-                    For families, couples, groups of friends and teams. No skills needed!
+                <h1 class="hero__title visually-hidden">Estudio de Arte Creativo</h1>
+                <p class="hero__subtitle">Estudio de arte en Barcelona donde la creatividad fluye libremente.
+                    Para familias, parejas, grupos de amigos y equipos. ¡No necesitas saber dibujar ni pintar!
                 </p>
                 <div class="hero__cta">
-                    <a href="#prices" class="btn">Book Your Session</a>
+                    <a href="#prices" class="btn">Reserva Tu Sesión</a>
                 </div>
             </div>
             <div class="hero__video-container">
-                <video class="hero__video" autoplay muted loop playsinline>
+                <video class="hero__video" autoplay muted loop controls>
                     <source src="assets/video/sp_katya_alina.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Tu navegador no soporta la etiqueta de video.
                 </video>
             </div>
         </div>
@@ -95,117 +112,120 @@
 
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Your Experience Step by Step</h2>
+            <h2 class="section-title">Tu Experiencia Paso a Paso</h2>
 
             <ol class="steps">
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Book Your Session</h3>
-                        <p class="step-description">Choose a date and time that suits you and get ready for an
-                            unforgettable creative adventure.</p>
+                        <h3 class="step-title">Reserva Tu Sesión</h3>
+                        <p class="step-description">Elige una fecha y hora que te convenga y prepárate para una
+                            aventura creativa inolvidable.</p>
                     </div>
                 </li>
 
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Arrive & Get a Welcome Drink</h3>
-                        <p class="step-description">Step into our space, relax, and get in the mood for some
-                            messy fun.</p>
+                        <h3 class="step-title">Llega y Recibe una Bebida de Bienvenida</h3>
+                        <p class="step-description">Entra en nuestro espacio, relájate y prepárate para
+                            divertirte con el arte.</p>
                     </div>
                 </li>
 
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Gear Up</h3>
-                        <p class="step-description">Put on a protective suit, gloves, and shoe covers—so you can go all
-                            in without worrying about the mess.</p>
+                        <h3 class="step-title">Equípate</h3>
+                        <p class="step-description">Ponte un traje protector, guantes y cubrezapatos para que puedas
+                            sumergirte completamente sin preocuparte por el desorden.</p>
                     </div>
                 </li>
 
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Choose Your Colors</h3>
-                        <p class="step-description">Pick your favourite paints and get ready to unleash your creativity.
-                            No rules, just play!</p>
+                        <h3 class="step-title">Elige Tus Colores</h3>
+                        <p class="step-description">Selecciona tus pinturas favoritas y libera tu creatividad.
+                            ¡Sin reglas, solo juega!</p>
                     </div>
                 </li>
 
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Create & Have Fun</h3>
-                        <p class="step-description">Splash, pour, beat, or spin your way to an abstract masterpiece.</p>
+                        <h3 class="step-title">Crea y Diviértete</h3>
+                        <p class="step-description">Salpica, vierte, golpea o gira para crear una obra maestra
+                            abstracta.</p>
                     </div>
                 </li>
 
                 <li class="step-item">
                     <div class="step-content">
-                        <h3 class="step-title">Pick Up Your Artwork</h3>
-                        <p class="step-description">Your painting will be ready for pickup in 24-48 hours once it
-                            dries.</p>
+                        <h3 class="step-title">Recoge Tu Obra de Arte</h3>
+                        <p class="step-description">Tu pintura estará lista para recoger en 24-48 horas una vez que
+                            se seque.</p>
                     </div>
                 </li>
             </ol>
 
             <div class="experience-cta">
-                <p class="experience-prompt">🎨 Ready to make some art?</p>
-                <a href="#prices" class="btn">Book Your Session</a>
+                <p class="experience-prompt">🎨 ¿Listo para crear arte?</p>
+                <a href="#prices" class="btn">Reserva Tu Sesión</a>
             </div>
         </div>
     </section>
 
     <section id="techniques" class="techniques">
         <div class="container">
-            <h2 class="section-title">Painting Techniques</h2>
-            <p class="techniques-intro">Discover different ways to create your abstract masterpiece. No skills needed,
-                just pure creative fun!</p>
+            <h2 class="section-title">Técnicas de Pintura</h2>
+            <p class="techniques-intro">Descubre diferentes formas de crear tu obra abstracta. Cero experiencia
+                artística necesaria,
+                ¡solo diversión creativa pura!</p>
 
             <div class="techniques-grid">
                 <div class="technique-item">
                     <div class="technique-video-container">
                         <video class="technique-video" autoplay muted loop playsinline>
                             <source src="assets/video/techniques/pouring1K.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            Tu navegador no soporta la etiqueta de video.
                         </video>
                     </div>
-                    <h3 class="technique-title">Pouring</h3>
-                    <p class="technique-description">Pour different colors and watch them blend into mesmerizing
-                        patterns.</p>
+                    <h3 class="technique-title">Vertido</h3>
+                    <p class="technique-description">Vierte diferentes colores y observa cómo se mezclan formando
+                        patrones hipnotizantes.</p>
                 </div>
 
                 <div class="technique-item">
                     <div class="technique-video-container">
                         <video class="technique-video" autoplay muted loop playsinline>
                             <source src="assets/video/techniques/spinning1K.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            Tu navegador no soporta la etiqueta de video.
                         </video>
                     </div>
-                    <h3 class="technique-title">Spinning</h3>
-                    <p class="technique-description">Create radial designs by spinning your canvas after applying
-                        paint.</p>
+                    <h3 class="technique-title">Giro</h3>
+                    <p class="technique-description">Crea diseños radiales girando tu lienzo después de aplicar
+                        la pintura.</p>
                 </div>
 
                 <div class="technique-item">
                     <div class="technique-video-container">
                         <video class="technique-video" autoplay muted loop playsinline>
                             <source src="assets/video/techniques/boxing1K.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            Tu navegador no soporta la etiqueta de video.
                         </video>
                     </div>
-                    <h3 class="technique-title">Boxing</h3>
-                    <p class="technique-description">Punch your way to artistic expression with paint-covered boxing
-                        gloves.</p>
+                    <h3 class="technique-title">Boxeo</h3>
+                    <p class="technique-description">Golpea tu camino hacia la expresión artística con guantes de boxeo
+                        cubiertos de pintura.</p>
                 </div>
 
                 <div class="technique-item">
                     <div class="technique-video-container">
                         <video class="technique-video" autoplay muted loop playsinline>
                             <source src="assets/video/techniques/balloons1K.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+                            Tu navegador no soporta la etiqueta de video.
                         </video>
                     </div>
-                    <h3 class="technique-title">Balloons</h3>
-                    <p class="technique-description">Create playful splatter patterns by popping paint-filled balloons
-                        on canvas.</p>
+                    <h3 class="technique-title">Globos</h3>
+                    <p class="technique-description">Crea patrones de salpicaduras juguetonas explotando globos llenos
+                        de pintura
+                        sobre el lienzo.</p>
                 </div>
             </div>
         </div>
@@ -213,20 +233,21 @@
 
     <section id="prices" class="prices">
         <div class="container">
-            <h2 class="section-title">Prices</h2>
+            <h2 class="section-title">Precios</h2>
 
             <div class="pricing-tabs">
                 <ul class="pricing-nav">
-                    <li class="pricing-nav-item active" data-tab="sessions">Sessions</li>
-                    <li class="pricing-nav-item" data-tab="packages">Packages</li>
+                    <li class="pricing-nav-item active" data-tab="sessions">Sesiones</li>
+                    <li class="pricing-nav-item" data-tab="packages">Paquetes</li>
                 </ul>
 
                 <div class="pricing-content">
                     <div class="pricing-tab active" id="sessions-tab">
                         <div class="price-header">
-                            <h3 class="visually-hidden">Sessions</h3>
-                            <p class="price-description">Flexible pricing options based on group size! Choose how many
-                                canvases you want for your creative experience.</p>
+                            <h3 class="visually-hidden">Sesiones</h3>
+                            <p class="price-description">¡Opciones de precios flexibles según el tamaño del grupo! Elige
+                                cuántos
+                                lienzos quieres para tu experiencia creativa.</p>
                         </div>
 
                         <div class="pricing-cards">
@@ -234,32 +255,32 @@
                                 <div class="price-card-content">
                                     <div class="price-card-header">
                                         <span class="price-card-icon">👥</span>
-                                        <h4 class="price-card-title">Couples</h4>
+                                        <h4 class="price-card-title">Parejas</h4>
                                     </div>
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60-90</div>
-                                        <div class="price-card-duration">⏱️ 1 hour</div>
-                                        <div class="price-card-note">€30-45 per person</div>
+                                        <div class="price-card-duration">⏱️ 1 hora</div>
+                                        <div class="price-card-note">€30-45 por persona</div>
                                     </div>
-                                    <a href="https://calendly.com/splashplay-studio/individual-creative-session-clone"
-                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/individual-creative-session-clone'});return false;"
-                                            class="btn btn-small">Book Now</a>
+                                    <a href="https://calendly.com/splashplay-studio/para-parejas-for-couples-60-90-clon"
+                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/para-parejas-for-couples-60-90-clon'});return false;"
+                                            class="btn btn-small">Reservar Ahora</a>
                                 </div>
                             </div>
                             <div class="price-card">
                                 <div class="price-card-content">
                                     <div class="price-card-header">
                                         <span class="price-card-icon">👨‍👩‍👦</span>
-                                        <h4 class="price-card-title">2-3 People</h4>
+                                        <h4 class="price-card-title">2-3 Personas</h4>
                                     </div>
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60-120</div>
-                                        <div class="price-card-duration">⏱️ 1 hour</div>
-                                        <div class="price-card-note">€20-40 per person</div>
+                                        <div class="price-card-duration">⏱️ 1 hora</div>
+                                        <div class="price-card-note">€20-40 por persona</div>
                                     </div>
-                                    <a href="https://calendly.com/splashplay-studio/it-takes-two-clone"
-                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/it-takes-two-clone'});return false;"
-                                            class="btn btn-small">Book Now</a>
+                                    <a href="https://calendly.com/splashplay-studio/para-2-3-personas-for-2-3-people-60-120-clon"
+                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/para-2-3-personas-for-2-3-people-60-120-clon'});return false;"
+                                            class="btn btn-small">Reservar Ahora</a>
                                 </div>
                             </div>
 
@@ -267,16 +288,16 @@
                                 <div class="price-card-content">
                                     <div class="price-card-header">
                                         <span class="price-card-icon">👨‍👩‍👧‍👦</span>
-                                        <h4 class="price-card-title">4-5 People</h4>
+                                        <h4 class="price-card-title">4-5 Personas</h4>
                                     </div>
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60-175</div>
-                                        <div class="price-card-duration">⏱️ 2 hours</div>
-                                        <div class="price-card-note">Flexible options</div>
+                                        <div class="price-card-duration">⏱️ 2 horas</div>
+                                        <div class="price-card-note">Opciones flexibles</div>
                                     </div>
-                                    <a href="https://calendly.com/splashplay-studio/2-3-people-clone"
-                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/2-3-people-clone'});return false;"
-                                            class="btn btn-small">Book Now</a>
+                                    <a href="https://calendly.com/splashplay-studio/para-4-5-personas-for-4-5-people-60-175-clon"
+                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/para-4-5-personas-for-4-5-people-60-175-clon'});return false;"
+                                            class="btn btn-small">Reservar Ahora</a>
                                 </div>
                             </div>
 
@@ -288,159 +309,150 @@
                                     </div>
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60</div>
-                                        <div class="price-card-duration">⏱️ 1 hour</div>
+                                        <div class="price-card-duration">⏱️ 1 hora</div>
                                     </div>
-                                    <a href="https://calendly.com/splashplay-studio/creative-session-clone"
-                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/creative-session-clone'});return false;"
-                                            class="btn btn-small">Book Now</a>
+                                    <a href="https://calendly.com/splashplay-studio/individual-60-clon"
+                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/individual-60-clon'});return false;"
+                                            class="btn btn-small">Reservar Ahora</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="sessions-cta">
-                            <a href="#prices" class="btn">Book Your Session</a>
+                            <a href="#prices" class="btn">Reserva Tu Sesión</a>
                         </div>
 
                         <div class="open-sessions-container">
                             <div class="open-sessions-header">
-                                <h3 class="open-sessions-title">🤗 Open Sessions</h3>
-                                <p class="open-sessions-description">Fixed time, fixed price! Join a creative experience
-                                    with a small group of 4 people, where each person works on their own canvas.</p>
+                                <h3 class="open-sessions-title">🤗 Sesiones Abiertas</h3>
+                                <p class="open-sessions-description">¡Horario fijo, precio fijo! Únete a una experiencia
+                                    creativa
+                                    con un pequeño grupo de 4 personas, donde cada persona trabaja en su propio
+                                    lienzo.</p>
                             </div>
                             <div class="open-sessions-content">
                                 <div class="open-sessions-price">
                                     <span class="open-sessions-amount">€30</span>
-                                    <span class="open-sessions-note">per canvas</span>
+                                    <span class="open-sessions-note">por lienzo</span>
                                 </div>
                                 <div class="open-sessions-details">
-                                    <span class="open-sessions-detail">👥 4 people</span>
-                                    <span class="open-sessions-detail">🗓️ Tuesday, Thursday</span>
+                                    <span class="open-sessions-detail">👥 4 personas</span>
+                                    <span class="open-sessions-detail">🗓️ Martes, Jueves</span>
                                     <span class="open-sessions-detail">⏰ 15:30–17:00</span>
-                                    <a href="https://calendly.com/splashplay-studio/sesion-abierta-30-clon"
-                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/sesion-abierta-30-clon'});return false;"
-                                            class="btn btn-small">Reserve your spot</a>
+                                    <a href="https://calendly.com/splashplay-studio/nueva-reunion"
+                                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/nueva-reunion'});return false;"
+                                            class="btn btn-small">Reserva tu plaza</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Open Sessions tab content moved to main Sessions section -->
-
-                    <!-- Gift Certificates moved to separate section -->
-
                     <div class="pricing-tab" id="packages-tab">
                         <div class="price-header">
-                            <h3 class="visually-hidden">Packages</h3>
-                            <p class="price-description">Can be used individually or shared with friends!</p>
+                            <h3 class="visually-hidden">Paquetes</h3>
+                            <p class="price-description">¡Se pueden usar individualmente o compartir con amigos!</p>
                         </div>
 
                         <div class="pricing-cards pricing-packages">
                             <div class="price-card">
                                 <div class="price-card-header">
-                                    <h4 class="price-card-title">Starter Pack</h4>
+                                    <h4 class="price-card-title">Paquete Inicial</h4>
                                 </div>
                                 <div class="price-card-body">
                                     <div class="price-card-price">€140</div>
-                                    <div class="price-card-price-note">€35 per painting</div>
+                                    <div class="price-card-price-note">€35 por pintura</div>
                                     <ul class="price-card-features">
-                                        <li>🎨 4 canvases</li>
-                                        <li>⏲️ Valid for 2 months</li>
-                                        <li>🤑 Base price</li>
+                                        <li>🎨 4 lienzos</li>
+                                        <li>⏲️ Válido por 2 meses</li>
+                                        <li>🤑 Precio base</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
                                 <div class="price-card-header">
-                                    <h4 class="price-card-title">Creative Pack</h4>
+                                    <h4 class="price-card-title">Paquete Creativo</h4>
                                 </div>
                                 <div class="price-card-body">
                                     <div class="price-card-price">€260</div>
-                                    <div class="price-card-price-note">€32.50 per painting</div>
+                                    <div class="price-card-price-note">€32.50 por pintura</div>
                                     <ul class="price-card-features">
-                                        <li>🎨 8 canvases</li>
-                                        <li>⏲️ Valid for 4 months</li>
-                                        <li>🤑 €20 off</li>
+                                        <li>🎨 8 lienzos</li>
+                                        <li>⏲️ Válido por 4 meses</li>
+                                        <li>🤑 €20 de descuento</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card popular">
                                 <div class="price-card-badge">Popular</div>
                                 <div class="price-card-header">
-                                    <h4 class="price-card-title">Art Lovers Pack</h4>
+                                    <h4 class="price-card-title">Paquete Amantes del Arte</h4>
                                 </div>
                                 <div class="price-card-body">
                                     <div class="price-card-price">€375</div>
-                                    <div class="price-card-price-note">€31.25 per painting</div>
+                                    <div class="price-card-price-note">€31.25 por pintura</div>
                                     <ul class="price-card-features">
-                                        <li>🎨 12 canvases</li>
-                                        <li>⏲️ Valid for 6 months</li>
-                                        <li>🤑 €45 off</li>
+                                        <li>🎨 12 lienzos</li>
+                                        <li>⏲️ Válido por 6 meses</li>
+                                        <li>🤑 €45 de descuento</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
                                 <div class="price-card-header">
-                                    <h4 class="price-card-title">Passion Pack</h4>
+                                    <h4 class="price-card-title">Paquete Pasión</h4>
                                 </div>
                                 <div class="price-card-body">
                                     <div class="price-card-price">€480</div>
-                                    <div class="price-card-price-note">€30 per painting</div>
+                                    <div class="price-card-price-note">€30 por pintura</div>
                                     <ul class="price-card-features">
-                                        <li>🎨 16 canvases</li>
-                                        <li>⏲️ Valid for 8 months</li>
-                                        <li>🤑 €80 off</li>
+                                        <li>🎨 16 lienzos</li>
+                                        <li>⏲️ Válido por 8 meses</li>
+                                        <li>🤑 €80 de descuento</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
 
                             <div class="price-card">
                                 <div class="price-card-header">
-                                    <h4 class="price-card-title">Ultimate Pack</h4>
+                                    <h4 class="price-card-title">Paquete Definitivo</h4>
                                 </div>
                                 <div class="price-card-body">
                                     <div class="price-card-price">€580</div>
-                                    <div class="price-card-price-note">€29 per painting</div>
+                                    <div class="price-card-price-note">€29 por pintura</div>
                                     <ul class="price-card-features">
-                                        <li>🎨 20 canvases</li>
-                                        <li>⏲️ Valid for 10 months</li>
-                                        <li>🤑 €120 off</li>
+                                        <li>🎨 20 lienzos</li>
+                                        <li>⏲️ Válido por 10 meses</li>
+                                        <li>🤑 €120 de descuento</li>
                                     </ul>
                                 </div>
-                                <!-- Footer section removed -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- "Book Your Session" button moved to Sessions section -->
         </div>
     </section>
 
     <section id="gift-certificates" class="gift-certificates">
         <div class="container">
-            <h2 class="section-title">Gift Certificates</h2>
+            <h2 class="section-title">Tarjetas Regalo</h2>
 
             <div class="gift-certificates-intro">
-                <p class="gift-certificates-description">Perfect present for art lovers! Give the gift of
-                    creativity.</p>
+                <p class="gift-certificates-description">¡Regalo perfecto para los amantes del arte! Regala
+                    creatividad.</p>
             </div>
 
             <div class="gift-certificate-container">
                 <div class="gift-certificate-image">
                     <div class="gift-certificate">
-                        <img src="assets/splash-play-logo.svg" alt="SplashPlay Studio Logo"
+                        <img src="assets/splash-play-logo.svg" alt="Logo de SplashPlay Studio"
                                 class="gift-certificate-logo-img">
-                        <div class="gift-certificate-title">Gift Certificate</div>
+                        <div class="gift-certificate-title">Tarjeta Regalo</div>
                         <div class="gift-certificate-details">
-                            <div class="gift-certificate-text">A perfect gift for the creative person in your life!
+                            <div class="gift-certificate-text">¡Un regalo perfecto para la persona creativa en tu vida!
                             </div>
                         </div>
                         <div class="gift-certificate-gradient gift-certificate-gradient-1"></div>
@@ -451,36 +463,37 @@
                 <div class="gift-certificate-info">
                     <ul class="gift-certificate-prices">
                         <li class="gift-price-row">
-                            <span class="gift-canvases">1 Canvas</span>
+                            <span class="gift-canvases">1 Lienzo</span>
                             <span class="gift-price">€60</span>
                         </li>
                         <li class="gift-price-row">
-                            <span class="gift-canvases">2 Canvases</span>
+                            <span class="gift-canvases">2 Lienzos</span>
                             <span class="gift-price">€90</span>
                         </li>
                         <li class="gift-price-row highlight">
-                            <span class="gift-canvases">3 Canvases</span>
+                            <span class="gift-canvases">3 Lienzos</span>
                             <span class="gift-price">€120</span>
                         </li>
                         <li class="gift-price-row">
-                            <span class="gift-canvases">4 Canvases</span>
+                            <span class="gift-canvases">4 Lienzos</span>
                             <span class="gift-price">€140</span>
                         </li>
                         <li class="gift-price-row">
-                            <span class="gift-canvases">5 Canvases</span>
+                            <span class="gift-canvases">5 Lienzos</span>
                             <span class="gift-price">€165</span>
                         </li>
                         <li class="gift-price-row">
-                            <span class="gift-canvases">10 Canvases</span>
+                            <span class="gift-canvases">10 Lienzos</span>
                             <span class="gift-price">€310</span>
                         </li>
                     </ul>
                     <div class="gift-certificate-validity">
-                        <p>All certificates are valid for 12 months. The 10 canvases certificate is valid for 18
-                            months.</p>
+                        <p>Todos los certificados son válidos por 12 meses. El certificado de 10 lienzos es válido por
+                            18
+                            meses.</p>
                     </div>
                     <div class="gift-certificate-cta">
-                        <a href="#contacts" class="btn">Contact to purchase</a>
+                        <a href="#contacts" class="btn">Contacta para comprar</a>
                     </div>
                 </div>
             </div>
@@ -489,62 +502,65 @@
 
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Gallery</h2>
+            <h2 class="section-title">Galería</h2>
 
             <div class="gallery-intro">
-                <p class="gallery-description">Discover the amazing artwork created by our visitors. Get inspired for
-                    your own creative session!</p>
+                <p class="gallery-description">Descubre las increíbles obras de arte creadas por nuestros visitantes.
+                    ¡Inspírate para
+                    tu propia sesión creativa!</p>
             </div>
 
             <div class="gallery-container">
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery1.jpg" alt="Colorful abstract painting"
+                        <img src="assets/photo/gallery/gallery1.jpg" alt="Pintura abstracta colorida"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery2.jpg" alt="Vibrant splatter artwork"
+                        <img src="assets/photo/gallery/gallery2.jpg" alt="Obra de arte con salpicaduras vibrantes"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery3.jpg" alt="Expressive swirl painting"
+                        <img src="assets/photo/gallery/gallery3.jpg" alt="Pintura de remolinos expresiva"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery4.jpg" alt="Bold abstract composition"
+                        <img src="assets/photo/gallery/gallery4.jpg" alt="Composición abstracta audaz"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery13.jpg" alt="Colorful abstract masterpiece"
+                        <img src="assets/photo/gallery/gallery13.jpg" alt="Obra maestra abstracta colorida"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery5.jpg" alt="Dynamic pour painting" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery6.jpg" alt="Colorful radial design" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery7.jpg" alt="Textured abstract artwork"
+                        <img src="assets/photo/gallery/gallery5.jpg" alt="Pintura de vertido dinámica"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery8.jpg" alt="Fluid art creation" class="gallery-image">
+                        <img src="assets/photo/gallery/gallery6.jpg" alt="Diseño radial colorido" class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery9.jpg" alt="Splatter technique artwork"
+                        <img src="assets/photo/gallery/gallery7.jpg" alt="Obra de arte abstracta con textura"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery10.jpg" alt="Colorful abstract masterpiece"
+                        <img src="assets/photo/gallery/gallery8.jpg" alt="Creación de arte fluido"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery11.jpg" alt="Colorful abstract masterpiece"
+                        <img src="assets/photo/gallery/gallery9.jpg" alt="Obra de arte con técnica de salpicaduras"
                                 class="gallery-image">
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/photo/gallery/gallery12.jpg" alt="Colorful abstract masterpiece"
+                        <img src="assets/photo/gallery/gallery10.jpg" alt="Obra maestra abstracta colorida"
+                                class="gallery-image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/photo/gallery/gallery11.jpg" alt="Obra maestra abstracta colorida"
+                                class="gallery-image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/photo/gallery/gallery12.jpg" alt="Obra maestra abstracta colorida"
                                 class="gallery-image">
                     </div>
                 </div>
@@ -554,29 +570,29 @@
 
     <section id="contacts" class="contacts">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">Contacto</h2>
 
             <div class="contacts-container">
                 <div class="contacts-info">
                     <div class="contacts-item">
-                        <h3 class="contacts-item-title">Address</h3>
+                        <h3 class="contacts-item-title">Dirección</h3>
                         <p class="contacts-item-text">Concili de Trento, 7, Barcelona</p>
-                        <p class="contacts-item-text">🚇 El Clot (L1, L2) and Glories (L1)</p>
+                        <p class="contacts-item-text">🚇 El Clot (L1, L2) y Glòries (L1)</p>
                         <a href="https://maps.app.goo.gl/cWqY6xwzxc6oU5AW7" target="_blank" rel="noopener"
-                                class="btn btn-small">Get Directions</a>
+                                class="btn btn-small">Cómo Llegar</a>
                     </div>
 
                     <div class="contacts-item">
                         <h3 class="contacts-item-title">WhatsApp</h3>
                         <p class="contacts-item-text">+34 641 671 670</p>
-                        <a href="https://wa.me/34641671670" target="_blank" rel="noopener" class="btn btn-small">Send
-                            Message</a>
+                        <a href="https://wa.me/34641671670" target="_blank" rel="noopener" class="btn btn-small">Enviar
+                            Mensaje</a>
                     </div>
 
-                       <div class="contacts-item">
+                    <div class="contacts-item">
                         <h3 class="contacts-item-title">Email</h3>
                         <p class="contacts-item-text">info@splashplay.es</p>
-                        <a href="mailto:info@splashplay.es" target="_blank" rel="noopener" class="btn btn-small">Send
+                        <a href="mailto:info@splashplay.es" target="_blank" rel="noopener" class="btn btn-small">Enviar
                             email</a>
                     </div>
 
@@ -596,10 +612,10 @@
 <footer>
     <div class="container">
         <div class="footer__content">
-            <p>&copy; 2025 SplashPlay Creative Studio. All rights reserved.</p>
+            <p>&copy; 2025 SplashPlay Creative Studio. Todos los derechos reservados.</p>
             <div class="footer__social">
                 <a href="https://www.instagram.com/splashplaystudio" target="_blank" rel="noopener" class="social-link"
-                        aria-label="Visit our Instagram">
+                        aria-label="Visita nuestro Instagram">
                     <svg class="instagram-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
