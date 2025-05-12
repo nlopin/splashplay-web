@@ -37,6 +37,10 @@
     <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"></script>
     <script>window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
     window.amplitude.init('5eca8b4e2674622d9489bf466cdab71a', { 'autocapture': { 'elementInteractions': true } });</script>
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/@uploadcare/uc-video/dist/uc-video.js';
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/uc-video/dist/style.css"/>
 </head>
 <body>
 <header class="site-header">
@@ -102,10 +106,19 @@
                 </div>
             </div>
             <div class="hero__video-container">
-                <video class="hero__video" autoplay muted loop controls playsinline>
-                    <source src="assets/video/sp_katya_alina.mp4" type="video/mp4">
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
+                <uc-video
+                        controls
+                        loop
+                        muted
+                        autoplay
+                        uuid="2b59586f-7cc2-4376-a53e-41abd2fdf971"
+                        posterOffset="0:30"
+                        showLogo="false"
+                        preload="auto"
+                        disablePictureInPicture="true"
+                        fluid="true"
+                        aspectRatio="16:9"
+                ></uc-video>
             </div>
         </div>
     </section>

@@ -128,11 +128,8 @@ a:hover {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.hero__video {
-    width: 100%;
-    display: block;
+    aspect-ratio: 9 / 16;
+    background-color: #6e6c6c;
 }
 
 .hero__cta {
