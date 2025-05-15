@@ -213,7 +213,7 @@ header {
 
 .lang-separator {
     margin: 0 0.2rem;
-    color: var(--dark-text);
+    color: var(--purple);
 }
 
 nav ul {
