@@ -65,6 +65,12 @@ a {
     transition: color 0.3s;
 }
 
+a.lang-btn {
+    color: var(--purple);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
 a:hover {
     color: var(--orange);
 }
