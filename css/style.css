@@ -65,12 +65,6 @@ a {
     transition: color 0.3s;
 }
 
-a.lang-btn {
-    color: var(--purple);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
 a:hover {
     color: var(--orange);
 }
@@ -202,7 +196,7 @@ header {
 }
 
 .lang-btn {
-    color: var(--dark-text);
+    color: var(--purple);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     transition: all 0.3s ease;
