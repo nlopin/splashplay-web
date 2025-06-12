@@ -132,6 +132,11 @@ a:hover {
     background-color: #6e6c6c;
 }
 
+.hero__video {
+    width: 100%;
+    display: block;
+}
+
 .hero__cta {
     margin-top: 0.5rem;
     margin-bottom: 1rem;

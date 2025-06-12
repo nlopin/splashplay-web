@@ -37,10 +37,6 @@
     <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"></script>
     <script>window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
     window.amplitude.init('5eca8b4e2674622d9489bf466cdab71a', { 'autocapture': { 'elementInteractions': true } });</script>
-    <script type="module">
-      import 'https://cdn.jsdelivr.net/npm/@uploadcare/uc-video/dist/uc-video.js';
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/uc-video/dist/style.css"/>
 </head>
 <body>
 <header class="site-header">
@@ -106,20 +102,11 @@
                 </div>
             </div>
             <div class="hero__video-container">
-                <uc-video
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        playsinline
-                        uuid="1cb044ef-c966-414d-a05f-dabe91ac3bac"
-                        posterOffset="0:30"
-                        showLogo="false"
-                        preload="auto"
-                        disablePictureInPicture="true"
-                        fluid="true"
-                        aspectRatio="16:9"
-                ></uc-video>
+                <video class="hero__video" autoplay muted loop controls playsinline
+                        poster="https://ucarecdn.com/78dd52d9-5b15-434d-9b7e-8e32716668b6/-/preview/562x1000/">
+                    <source src="https://ucarecdn.com/11d9549f-7346-4bbc-843f-3e3be0fd6ba8/" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
             </div>
         </div>
     </section>
@@ -259,7 +246,8 @@
                     <div class="pricing-tab active" id="sessions-tab">
                         <div class="price-header">
                             <h3 class="visually-hidden">Sesiones</h3>
-                            <p class="price-description">Ya vengas solo, con tu pareja, un amigo, tu hijo, hija, o con todo el grupo — 
+                            <p class="price-description">Ya vengas solo, con tu pareja, un amigo, tu hijo, hija, o con
+                                todo el grupo —
                                 ¡te espera una sesión creativa a tu medida!
                             </p>
                         </div>
@@ -324,7 +312,9 @@
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60-120</div>
                                         <div class="price-card-duration">⏱️ 1 hora 30 min</div>
-                                        <div class="price-card-note">Para adultos y niños a partir de 6 años acompañados de adulto(s)</div>
+                                        <div class="price-card-note">Para adultos y niños a partir de 6 años acompañados
+                                            de adulto(s)
+                                        </div>
                                     </div>
                                     <a href="https://calendly.com/splashplay-studio/familiar-2-3-personas"
                                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/familiar-2-3-personas'});return false;"
@@ -332,7 +322,7 @@
                                 </div>
                             </div>
 
-                             <div class="price-card">
+                            <div class="price-card">
                                 <div class="price-card-content">
                                     <div class="price-card-header">
                                         <span class="price-card-icon">👨‍👩‍👧‍👦</span>
@@ -341,7 +331,9 @@
                                     <div class="price-card-body">
                                         <div class="price-card-price">€90-175</div>
                                         <div class="price-card-duration">⏱️ 2 horas</div>
-                                        <div class="price-card-note">Para adultos y niños a partir de 6 años acompañados de adulto(s)</div>
+                                        <div class="price-card-note">Para adultos y niños a partir de 6 años acompañados
+                                            de adulto(s)
+                                        </div>
                                     </div>
                                     <a href="https://calendly.com/splashplay-studio/familiar-4-5-personas"
                                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/familiar-4-5-personas'});return false;"
@@ -358,7 +350,7 @@
                                     <div class="price-card-body">
                                         <div class="price-card-price">€60</div>
                                         <div class="price-card-duration">⏱️ 1 hora</div>
-                                         <div class="price-card-note">Una experiencia creativa solo para ti</div>
+                                        <div class="price-card-note">Una experiencia creativa solo para ti</div>
                                     </div>
                                     <a href="https://calendly.com/splashplay-studio/sesion-individual"
                                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/splashplay-studio/sesion-individual'});return false;"
