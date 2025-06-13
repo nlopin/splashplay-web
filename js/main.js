@@ -129,6 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   document.head.appendChild(style);
 
+  // init calendly buttons
+  for (const link of document.querySelectorAll('a.calendly-link')) {
+    link.addEventListener('click', onCalendlyLinkClick)
+  }
+
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
   const headerNavContainer = document.querySelector('.header__nav-container');
 
@@ -198,4 +203,10 @@ function createLanguageBanner(userLang, targetUrl) {
     banner.remove();
     localStorage.setItem(WAS_LANG_BANNER_DISMISSED_KEY, 'true');
   });
+}
+
+function onCalendlyLinkClick(e) {
+  e.preventDefault()
+  Calendly.initPopupWidget({ url: e.target.href })
+  return false
 }
